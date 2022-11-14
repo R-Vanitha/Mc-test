@@ -1,0 +1,403 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.page-wrapper{
+    max-width: 1440px; width: 100%;   margin: 0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.headerlinks {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.topnav {
+  overflow: hidden;
+}
+.cart {
+    position: relative;
+}
+.cart span {
+    font-size: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 0px 8px;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.topnav .icon {
+  display: none;
+}
+.main {
+    margin-left: 0;
+    font-size: 28px;
+    padding: 0;
+    display: flow-root;
+  }
+.sidenav {
+    width: 23%;
+    position: sticky;
+    z-index: 1;
+    top: 20px;
+    left: 0;
+    overflow-x: hidden;
+    padding: 8px 0;
+    float: left;
+max-width: 324px;
+  } 
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #064579;
+  }
+  
+  .bodycontent {
+    width: 55%;
+    float: left;
+    text-align: center;
+}  
+
+.home-demo .owl-carousel{
+    display: block;
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px 14px 0;
+    transition: 0.3s;
+    font-family: 'Helvetica Now Text';
+    font-size: 14px;
+    background: none;
+    color: #767676;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    font-weight: 600;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  /* Style the tab content */
+  .tabcontent{
+      display: none;
+  }
+  .tabcontent p, .tabcontent a{
+    border-top: none;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    padding:0;
+  } 
+  .tabcontent a{
+    padding-left: 2px;
+    color: #000;
+    text-decoration: underline;
+}
+.column2 {
+    padding: 0 20px;
+}
+  .home-demo .item {
+    background: #ff3f4d;
+    }
+    .home-demo h2 {
+        color: #FFF;
+        text-align: center;
+        padding: 5rem 0;
+        margin: 0;
+        font-style: italic;
+        font-weight: 300;
+    }
+    .similarlinks{
+        padding: 120px 0;
+        text-align: center;
+    }
+    .similarlinks a{
+        padding: 0 24px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .notefeditor{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .bottom-text .testitext{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 32px;
+        text-align: center;
+        color: #000000;
+    }
+    .bottom-text {
+        text-align: center;
+    }
+    .bottom-text .testiname{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        text-transform: capitalize;
+        color: #000000;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .bottom-text .testiname span{
+        width: 28px;
+        height: 0px;
+        border-bottom: 1px solid #000000;
+        margin-right: 8px;
+    }
+    .bottom-text .testiname p span{
+        text-transform: uppercase;
+        text-decoration: underline;
+        border: none;
+        margin:0;
+    }
+    .product-details{
+        margin-top: 75px;
+    }
+    .product-name {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        color: #000000;
+        padding-bottom: 4px;
+    }
+    .product-description {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        color: #000000;
+        padding-bottom: 8px;
+    }
+    .product-price {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #000000;
+        padding-bottom: 24px;
+    }
+    .colorname {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-size: 14px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #000000;
+        padding-bottom: 8px;
+    }
+    .colorname span {
+        font-weight: 700;
+    }
+    .colorimages img {
+        border: 1px solid #E5E5E5;
+        width: 51px;
+        height: 63px;
+    }
+    .product-size p {
+        margin: 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #000000;
+        padding-bottom: 8px;
+    }
+    .product-size p span{
+        font-weight: 700;
+    }
+    .sizename {
+        display: flex;
+        padding-top: 24px;
+        justify-content: space-between;
+    }
+    .sizename .guide{
+        text-decoration: underline;
+    }
+    .sizeimages {
+        display: flex;
+        justify-content: space-around;
+    }
+    .sizeimages p {
+        border: 1px solid #E5E5E5;
+        flex: 1;
+        text-align: center;
+    }
+    .sizeimages {
+        display: inline-block;
+    }
+    .sizeimages p {
+        border: 1px solid #E5E5E5;
+        flex: 1;
+        text-align: center;
+        padding: 8px;
+        border-radius: 100px;
+        width: 60px;
+        float: left;
+        margin: 0 3px 6px 0;
+    }
+    p.inactive {
+        color: #A6A6A6;
+    }
+    p.inactive:before {
+        border: 1px solid #A6A6A6;
+        transform: rotate(76deg);
+        content: '';
+        width: 30px;
+        height: 30px;
+    }
+    .tocart {
+        background: #000000;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 15px 0;
+        margin: 24px 0;
+        border-radius: 100px;
+        text-transform: uppercase;
+    }
+    .productinfotext {
+        font-size: 14px;
+        padding-bottom: 17px;
+    }
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 767px) {
+    .topnav a{display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .page-wrapper header{
+        padding: 20px 15px;
+    }
+    .mobilehide{
+        display: none;
+    }
+    .bodycontent, .sidenav{
+        width: 100%; max-width: 100%;
+    }
+    .column2{
+        padding: 0 20px;
+    }
+    .home-demo .owl-theme .owl-dots .owl-dot span {
+        width: 16px;
+        height: 2px;
+        background: #000000;
+        border-radius: 4px;
+        opacity: 0.2;
+        margin: 5px 8px;
+    }
+    .home-demo .owl-theme .owl-dots .owl-dot.active span, .home-demo .owl-theme .owl-dots .owl-dot:hover span {
+        background: #000000;
+        opacity: 1;
+    }
+    .product-details {
+        margin-top: 25px;
+        padding: 0 0px;
+        text-align: left;
+    }
+    .sidenav.desktophide.mobileshow{
+        display: block; position: static;
+    }
+    .bottom-text {
+        text-align: left;
+        display: inline-block;
+    }
+    .similarlinks {
+        padding: 120px 0 90px;
+    }
+    .similarlinks a{
+        padding: 0px 10px;
+    }
+    .bottom-text .testitext{
+        font-size: 20px;
+    }
+    .logo {
+        order: 1;
+    }
+    .topnav {
+        order: 3;
+    }
+    .headerlinks{
+        order: 2;
+    }
+    .product-details .product-name{
+        font-size: 32px;
+    }
+}
+
+@media(min-width: 991px){
+    .sidenav.desktophide.mobileshow{
+        display: none;
+    }
+}

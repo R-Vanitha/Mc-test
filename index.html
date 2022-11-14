@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+
+function owlInitialize() {
+if ($(window).width() < 1280) {
+    $('.prdt_category').addClass("owl-carousel");
+    $('.owl-carousel').owlCarousel({
+        loop:false,    
+        margin: 5,  
+        nav: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        dots: true,        
+        responsive:{
+            0:{
+                items:1,           
+            },
+            480:{
+                items:1,           
+            },
+            640:{
+                items:1,           
+            }, 
+            1000:{
+                items:8,                
+            }
+        }
+    });
+}else{
+    $('.owl-carousel').owlCarousel('destroy');
+    $('.prdt_category').removeClass("owl-carousel");
+}
+}
+$(document).ready(function(e) {
+owlInitialize();
+});
+$(window).resize(function() {
+owlInitialize();
+});
+  
+</script>
+</head>
+<body>
+<div class="page-wrapper">
+<header>
+    <div class="logo"><img src="images/logo.svg"></div>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">The Edit</a>
+        <a href="#news">New Arrivals</a>
+        <a href="#contact">Designers</a>
+        <a href="#about">Clothing</a>
+        <a href="#home">Shoes</a>
+        <a href="#news">Bags</a>
+        <a href="#contact">Accessories</a>
+        <a href="#about">Jewelry</a>
+        <a href="#contact">Beauty</a>
+        <a href="#about">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="headerlinks">
+        <div class="search"><img src="images/search.svg"></div>
+        <div class="cart"><img src="images/cart.svg"><span>0</span></div>
+        <div class="account"><img src="images/account.svg"></div>
+    </div>
+</header>
+   
+<div class="main">
+    <div class="sidenav mobilehide">
+            <div class="tab">
+                    <button class="tablinks active" onclick="openCity(event, 'London')" id="defaultOpen">Details</button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">Delivery</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Fit</button>
+                  </div>
+                  
+                  <div id="London" class="tabcontent" style="display: block;">
+                    <p>The Forte Lurex Linen Viscose Jacket in Mother of Pearl features lunar lavishness by night and 
+                        by day: a blazer in a linen blend shot with lurex for a shimmering surface that shines like a star 
+                        in the sky. it has a straight fit with well defined shoulders and a shawl collar culminating in a button 
+                        and has been flawlessly finished with three jet pockets with a sartorial feel. </p>
+                    <p>See the <a href="#">EDITOR’S NOTE</a></p>
+                    <p>Learn about the <a href="#">DESIGNER</a></p>
+                  </div>
+                  
+                  <div id="Paris" class="tabcontent">
+                    <p>Delivery</p> 
+                  </div>
+                  
+                  <div id="Tokyo" class="tabcontent">
+                    <p>Fit</p>
+                  </div>
+    </div>
+    <div class="bodycontent">
+        <div class="column2">
+            <div class="home-demo">
+                <div class="owl-carousel owl-theme">
+                    <img class="item" src="images/image1.png">
+                    <img class="item" src="images/image2.png">
+                    <img class="item" src="images/image3.png">
+                    <img class="item" src="images/image4.png">
+                    <img class="item" src="images/image5.png">
+                </div>
+            </div>
+            <div class="sidenav desktophide mobileshow">
+                    <div class="product-details">
+                        <div class="product-name">JONATHAN SIMKHAI</div>
+                        <div class="product-description">Lurex Linen Viscose Jacket in Conchiglia</div>
+                        <div class="product-price">$225</div>
+                        <div class="product-config">
+                            <div class="product-color">
+                                <div class="colorname"><span>Color</span> Conchiglia</div>
+                                <div class="colorimages">
+                                    <img src="images/image1.png">
+                                    <img src="images/image6.png">
+                                </div>
+                            </div>
+                            <div class="product-size">
+                                <div class="sizename">
+                                    <p><span>Size</span> L</p>
+                                    <p class="guide">SIZE GUIDE</p>
+                                </div>
+                                <div class="sizeimages">
+                                    <p>XS</p>
+                                    <p>S</p>
+                                    <p class="inactive">M</p>
+                                    <p>XL</p>
+                                    <p>XXL</p>
+                                </div>
+                            </div>
+                            <div class="tocart">Add to cart</div>
+                            <div class="productinfotext">Get 4 interest-free payments of $196.25 with Klarna LEARN MORE</div>
+                            <div class="productinfotext">Speak to a Personal Stylist CHAT NOW</div>
+                        </div>
+                    </div>
+                </div>
+            <div class="bottom-text">
+                <div class="similarlinks">
+                    <a href="">Jonathan Simkhai</a>
+                    <a href="">Blazers</a>
+                    <a href="">Viscose</a>
+                </div>
+                <p class="notefeditor">a note from the editor</p>
+                <p class="testitext">The Forte Lurex Linen Viscose Jacket in Mother of Pearl features lunar lavishness by night and by day: a blazer in a linen blend shot with lurex for a shimmering surface that shines like a star in the sky. </p>
+                <div class="testiname">
+                    <span></span>
+                    <p>By <span>MINNA SHIM</span>, Fashion Editor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidenav mobilehide">
+        <div class="product-details">
+            <div class="product-name">JONATHAN SIMKHAI</div>
+            <div class="product-description">Lurex Linen Viscose Jacket in Conchiglia</div>
+            <div class="product-price">$225</div>
+            <div class="product-config">
+                <div class="product-color">
+                    <div class="colorname"><span>Color</span> Conchiglia</div>
+                    <div class="colorimages">
+                        <img src="images/image1.png">
+                        <img src="images/image6.png">
+                    </div>
+                </div>
+                <div class="product-size">
+                    <div class="sizename">
+                        <p><span>Size</span> L</p>
+                        <p class="guide">SIZE GUIDE</p>
+                    </div>
+                    <div class="sizeimages">
+                        <p>XS</p>
+                        <p>S</p>
+                        <p class="inactive">M</p>
+                        <p>XL</p>
+                        <p>XXL</p>
+                    </div>
+                </div>
+                <div class="tocart">Add to cart</div>
+                <div class="productinfotext">Get 4 interest-free payments of $196.25 with Klarna LEARN MORE</div>
+                <div class="productinfotext">Speak to a Personal Stylist CHAT NOW</div>
+            </div>
+        </div>
+    </div>
+</div>  
+</div>      
+</body>
+</html>
